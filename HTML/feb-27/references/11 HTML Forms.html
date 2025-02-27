@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+
+<body>
+    <form action="success.html" method="get">
+        <!-- There are two methods to use label tag with an input tag -->
+        <!-- Method 1 -->
+        <!-- <label for="name1">Name</label>
+        <input name="name" id="name1">
+        <label for="email1">Email</label>
+        <input name="email" id="email1">
+        <button>Sign up</button> -->
+        <!-- <br> -->
+        <!-- Method 2 -->
+        <!-- <label>Name <input name="name"></label>
+        <label>Email <input name="email"></label>
+        <button>Sign up</button>
+        <br> -->
+
+        <!-- There are many attributes that we can use with input tag to limit the type of input a user can use for the form -->
+        <label for="name2">Name</label>
+        <input type="text" name="name" id="name2">
+        <label for="email2">Email</label>
+        <input type="email" name="email" id="email2" required placeholder="me@example.com" value="@gmail.com">
+        <button type="submit">Sign up</button>
+    </form>
+</body>
+
+</html>

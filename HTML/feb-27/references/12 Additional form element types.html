@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Our form</h1>
+    <form action="received.html" method="get">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="you@example.com">
+        <label for="pwd">Password</label>
+        <input type="password" name="password" id="pwd">
+        <label for="search">Search</label>
+        <input type="search" name="search" id="search" placeholder="&#128269;">
+        <label for="phnum">Phone Number</label>
+        <input type="tel" name="phone" id="phnum">
+        <label for="textarea">Text Area</label>
+        <textarea name="textarea" id="textarea" cols="30" rows="15" placeholder="Type your message here"></textarea>
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date">
+        <label for="color">Color</label>
+        <input type="color" name="color" id="color">
+        <label for="file">File</label>
+        <input type="file" name="file" id="file" accept="image/*" multiple>
+        <label for="checkbox">Checkbox</label>
+        <input type="checkbox" name="simplecheckbox" id="checkbox" value="the checkbox is checked" checked>
+        <label for="selectlist">Choose one</label>
+        <select name="selectlist" id="selectlist">
+            <option value="">First Option</option>
+            <option value="">Second Choice</option>
+            <option value="">Third Thing</option>
+        </select>
+        <fieldset>
+            <legend>Checkboxes in fieldset</legend>
+            <input type="checkbox" name="checkboxlist" id="thischeck" value="This" checked>
+            <label for="thischeck">This</label>
+            <input type="checkbox" name="checkboxlist" id="orcheck" value="And/or">
+            <label for="orcheck">And/Or</label>
+            <input type="checkbox" name="checkboxlist" id="thatcheck" value="That">
+            <label for="thatcheck">That</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Radio buttons in a fieldset</legend>
+            <input type="radio" name="radiobutton" id="thisradio" value="This">
+            <label for="thisradio">This</label>
+            <input type="radio" name="radiobutton" id="orradio" value="Or">
+            <label for="orradio">Or</label>
+            <input type="radio" name="radiobutton" id="thatradio" value="That">
+            <label for="thatradio">That</label>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
