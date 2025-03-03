@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>February 20 | CSS Pseudo Element Example</title>
+  <style>
+    p::first-letter {
+      font-size: x-large;
+      color: red;
+    }
+    p::first-line {
+      color: blue;
+    }
+    p {
+      text-indent: 20px;
+    }
+
+    ::selection {
+      color: salmon;
+      background-color: yellow;
+    }
+ 
+    a::selection{
+      color: blue;
+      background-color: lightblue;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li::before {
+      content: "👉";
+    }
+
+    li::after {
+      content: "👈";
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CSS Pseudo Element Example</h1>
+  </header>
+  <main>
+    <p>India is a vast and diverse country located in South Asia, known for its rich cultural heritage, history, and traditions. It is the world's most populous democracy and the seventh-largest country by land area. India boasts a variety of languages, religions, and ethnic groups, with Hindi and English being the official languages. Famous for its landmarks like the Taj Mahal and its contributions to philosophy, science, and arts, India is also an economic powerhouse with a growing global influence. <a href="#">Read more...</a></p>
+
+    <ul>
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+    </ul>
+  </main>
+  <footer>&copy;All rights reserved!</footer>
+</body>
+</html>

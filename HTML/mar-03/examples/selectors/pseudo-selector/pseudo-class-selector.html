@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>February 18 | CSS Pseudo Class Example</title>
+  <style>
+    a:link {
+      color: orange;
+    }
+    a:hover {
+      color: green;
+      text-decoration: none;
+    }
+    a:active {
+      color: cyan;
+      background-color: salmon;
+    }
+    a:visited {
+      color: red;
+    }
+
+    /* :nth-child(value)
+       value = 2n | even, 2n+1 | odd, 4n etc.
+    */
+    .segregated-list li:nth-child(odd) {
+      color: blue;
+      background-color: salmon;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CSS Pseudo Class Example</h1>
+  </header>
+  <main>
+    <a href="https://example.com">A link</a>
+
+    <ul class="segregated-list">
+     <li>Item - 1</li>
+     <li>Item - 2</li>
+     <li>Item - 3</li>
+     <li>Item - 4</li>
+     <li>Item - 5</li>
+     <li>Item - 6</li>
+     <li>Item - 7</li>
+     <li>Item - 8</li>
+     <li>Item - 9</li>
+     <li>Item - 10</li>
+    </ul>
+  </main>
+  <footer>&copy;All rights reserved!</footer>
+</body>
+</html>

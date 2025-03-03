@@ -1,0 +1,38 @@
+/* Child Selector */
+main > p {
+  color: green;
+}
+
+/* Decendent Selector */
+main p {
+  text-decoration: underline;
+}
+
+/* Sibling selector */
+main + p {
+  font-size: 20px;
+}
+
+button{
+  padding: 8px 12px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+/* Attribute Selectors */
+button[type] {
+  color: #f1f1f1;
+  border-radius: 20px;
+}
+
+button[type="button"] {
+  background-color: blue;
+}
+
+button[type="submit"] {
+  background-color: green;
+}
+
+button[type="reset"] {
+  background-color: red;
+}

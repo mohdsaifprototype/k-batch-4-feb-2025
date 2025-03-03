@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>February 20 | CSS Combinator selector demo</title>
+  <style>
+    .sub-menu { display: none; }
+    .menu{ transition: all 1s ease-in-out; }
+    .menu:hover { padding: 12px; background: green; color: blue;}
+
+    /* magic of combinator selector */
+    .menu:hover .sub-menu { display: block; }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    Menu
+    <ul class="sub-menu">
+      <li>Menu 1</li>
+      <li>Menu 2</li>
+      <li>Menu 3</li>
+      <li>Menu 4</li>
+    </ul>
+  </div>
+    <details>
+      <summary>
+        I have keys but no door. I have space but no rooms. you can enter but can't leave. what am I?
+      </summary>
+      A keyboard
+    </details>
+</body>
+</html>
