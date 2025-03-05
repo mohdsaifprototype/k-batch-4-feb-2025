@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>March 03 | CSS Introduction and beyond</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="text-center">CSS</h1>
+  </header>
+  <ul>
+    <li>
+      <h3>Introduction</h3>
+      <details>
+        <summary>What is CSS?</summary>
+        <p>CSS is a style sheet that controls the appearance of a document.</p>
+      </details>
+
+      <details>
+        <summary>What is the full form of CSS?</summary>
+        <p>Cascading Style Sheets</p>
+      </details>
+    </li>
+    <li>
+      <h3>Methods of CSS</h3>
+      <h4>There are 3 methods to apply CSS.</h4>
+      <ol>
+        <li>
+          <h5>Inline</h5>
+          <details>
+            <summary>What is Inline CSS?</summary>
+            <p>Inline CSS is used to apply styles to a single element.</p>
+            <p>Example: <code>&lt;p style="color: red;"&gt;Hello World!&lt;/p&gt;</code></p>
+            <a href="examples/methods-of-css/1-inline-css.html">Click here to see the example</a>
+          </details>
+        </li>
+        <li>
+          <h5>Internal</h5>
+          <details>
+            <summary>What is Internal CSS?</summary>
+            <p>Internal CSS is used to apply styles to a web page.</p>
+            <p>Example: <code>&lt;style&gt; p { color: red; } &lt;/style&gt;</code></p>
+            <a href="examples/methods-of-css/2-internal-css.html">Click here to see the example</a>
+          </details>
+        </li>
+        <li>
+          <h5>External</h5>
+          <details>
+            <summary>What is External CSS?</summary>
+            <p>External CSS is used to apply styles to a website.</p>
+            <p>Example: <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></p>
+            <a href="examples/methods-of-css/3-external-css.html">Click here to see the example</a>
+          </details>
+          <strong>Note: Internal and External CSS syntax is must be mentioned within the head element.</strong>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <h3>Selectors</h3>
+      <details>
+        <summary>What are CSS Selectors?</summary>
+        <p>CSS selectors are used to select HTML elements.</p>
+      </details>
+      <ul>
+        <li>
+          <h5>Simple Selector</h5>
+          <ol>
+            <li>Element/Type Selector</li>
+            <li>Class Selector</li>
+            <li>ID Selector</li>
+          </ol>
+          <a href="examples/selectors/simple/index.html">Click to Read More...</a>
+        </li>
+        <li>
+          <h5>Compound Selector</h5>
+          <a href="examples/selectors/compound/">See example</a>
+        </li>
+        <li>
+          <h5>Combinator Selector</h5>
+          <ol>
+            <li>Child Selctor</li>
+            <li>Sibling Selector</li>
+            <li>Descendant Selector</li>
+          </ol>
+          <a href="examples/selectors/pseudo-selector/index.html">Click to Read More...</a>
+        </li>
+        <li>
+          <h5>Pseudo Selector</h5>
+          <ol>
+            <li>Pseudo Class <br>for Example:
+              <ul>
+                <li>:link</li>
+                <li>:visited</li>
+                <li>:hover</li>
+                <li>:active</li>
+                <li>:checked</li>
+                <li>:first-child</li>
+                <li>:last-child</li>
+                <li>:nth-child()</li>
+                <li>:nth-last-child()</li>
+                <li>:not()</li>
+              </ul>
+            </li>
+            <li>Pseudo Element <br>for Example:
+              <ul>
+                <li>::before</li>
+                <li>::after</li>
+                <li>::first-line</li>
+                <li>::first-letter</li>
+                <li>::selection</li>
+              </ul>
+            </li>
+          </ol>
+          <a href="examples/selectors/pseudo-selector/index.html">Click to Read More...</a>
+        </li>
+      </ul>
+
+    </li>
+    <li>
+      <h3>Box Model</h3>
+      <details>
+        <summary>Click to see the image</summary>
+        <img src="assets/img/box-model.svg" alt="box-model" width="760" height="520">
+      </details>
+    </li>
+    <li>
+      <h3>Box Model Properties</h3>
+      <ol>
+        <li>box-sizing</li>
+        <li>display</li>
+        <li>float</li>
+        <li>line-height</li>
+        <li>position</li>
+        <li>z-index</li>
+      </ol>
+    </li>
+  </ul>
+
+  <div class="box">
+    This is a box
+  </div>
+</body>
+
+</html>
