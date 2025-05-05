@@ -1,0 +1,33 @@
+header{
+  padding-block: 4px;
+  background-color: #eadcff;
+}
+
+.box-transformation{
+  width: 200px;
+  height: 200px;
+  background-color: #f1f1f1;
+  text-align: center;
+  align-content: center;
+  
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateY(0);
+  /* transform-origin: top left; */
+  transition: all 6s ease-in-out;
+}
+
+.box-transformation:hover{
+  transform: rotateX(720deg) rotateY(720deg) rotateZ(720deg) translateY(500px);
+}
+
+.mybox{
+  width: 200px;height: 100px;
+  background-color: #fff;
+  transition: all 4s ease-in-out;
+  transform: rotateX(20deg) rotateY(20deg);
+}
+
+.mybox:hover{
+  /* transform: skewX(360deg); */
+  /* transform: scale(1.2); */
+  /* font-size: 32px; */
+}

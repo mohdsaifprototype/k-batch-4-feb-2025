@@ -1,0 +1,90 @@
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body>div {
+  display: none;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  background-color: #fff7;
+  padding-block: 2px;
+}
+
+/* Above 2k screen */
+@media only screen and (min-width: 1441px) and (max-width: 2560px) {
+  body {
+    background-color: #5f8716;
+  }
+
+  .s4k {
+    display: block;
+  }
+}
+
+/* for laptop screen L */
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {
+  body {
+    background-color: #5aabda;
+  }
+
+  .laptop-l {
+    display: block;
+  }
+}
+
+/* for laptop screen */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  body {
+    background-color: #875ada;
+  }
+
+  .laptop {
+    display: block;
+  }
+}
+
+/* for tablet screen */
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+  body {
+    background-color: #56b569;
+  }
+
+  .tablet {
+    display: block;
+  }
+}
+
+/* for mobile screen L */
+@media only screen and (max-width: 425px) and (min-width: 376px) {
+  body {
+    background-color: #b4ba41;
+  }
+
+  .mobile-l {
+    display: block;
+  }
+}
+
+/* for mobile screen M */
+@media only screen and (max-width: 375px) and (min-width: 320px) {
+  body {
+    background-color: #0ba1c0;
+  }
+
+  .mobile-m {
+    display: block;
+  }
+}
+
+/* for mobile screen S */
+@media only screen and (max-width: 320px) and (min-width: 200px) {
+  body {
+    background-color: #ffaadd;
+  }
+
+  .mobile-s {
+    display: block;
+  }
+}
