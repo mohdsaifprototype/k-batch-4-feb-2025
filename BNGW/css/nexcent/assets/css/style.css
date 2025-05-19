@@ -26,6 +26,7 @@
 
   /* ----/ Other \---- */
   --br-1: 6px;
+  --spacer: 16px;
   /* ----\ Other /---- */
 }
 
@@ -102,7 +103,7 @@ body>header {
 /* ----\ Section 1 /---- */
 
 /* ----/ Section 2 \---- */
-.card {
+#section-2 .card {
   width: 300px;
   height: 260px;
   display: flex;
@@ -115,11 +116,53 @@ body>header {
   border-radius: var(--br-1);
 }
 
-.card-primary {
+#section-2 .card-primary {
   height: 280px !important;
 }
 
 /* ----\ Section 2 /---- */
+
+/* ----/ Section 3 \---- */
+#section-3 .right{
+  max-width: 661px;
+}
+/* ----\ Section 3 /---- */
+
+/* ----/ Section 4 \---- */
+#section-4{
+  background-color: #f5f7fa;
+  padding-block: 64px;
+}
+#section-4 .card{
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 16px;
+}
+
+#section-4 .flex-row {
+  gap: 72px;
+  align-items: center;
+}
+
+#section-4 .right{
+  flex-grow: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+/* ----\ Section 4 /---- */
+
+/* ----/ Section 5 \---- */
+#section-5 .right {
+  max-width: 612px;
+}
+
+#section-5 .flex-row {
+  gap: 72px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+/* ----\ Section 5 /---- */
 
 .container {
   width: 100%;
@@ -139,6 +182,10 @@ h1 {
 }
 
 h2 {
+  font-size: 36px;
+  line-height: 44px;
+}
+.h2 {
   font-size: 36px;
   line-height: 44px;
 }
@@ -221,101 +268,100 @@ h4 {
 
 /* ----/ for margin \---- */
 .mt-1 {
-  margin-top: 0.5rem;
+  margin-top: calc(var(--spacer) * 0.25);
 }
 
 .mt-2 {
-  margin-top: 0.75rem;
+  margin-top: calc(var(--spacer) * 0.5);
 }
 
 .mt-3 {
-  margin-top: 1rem;
+  margin-top: calc(var(--spacer) * 1);
 }
 
 .mt-4 {
-  margin-top: 1.25rem;
+  margin-top: calc(var(--spacer) * 1.5);
 }
 
 .mt-5 {
-  margin-top: 1.5rem;
+  margin-top: calc(var(--spacer) * 2);
 }
 
 .mt-6 {
-  margin-top: 2rem;
+  margin-top: calc(var(--spacer) * 3);
 }
 
 .mb-1 {
-  margin-bottom: 0.5rem;
+  margin-bottom: calc(var(--spacer) * 0.25);
 }
 
 .mb-2 {
-  margin-bottom: 0.75rem;
+  margin-bottom: calc(var(--spacer) * 0.5);
 }
 
 .mb-3 {
-  margin-bottom: 1rem;
+  margin-bottom: calc(var(--spacer) * 1);
 }
 
 .mb-4 {
-  margin-bottom: 1.25rem;
+  margin-bottom: calc(var(--spacer) * 1.5);
 }
 
 .mb-5 {
-  margin-bottom: 1.5rem;
+  margin-bottom: calc(var(--spacer) * 2);
 }
 
 .mb-6 {
-  margin-bottom: 2rem;
+  margin-bottom: calc(var(--spacer) * 3);
 }
 
 .mx-1 {
-  margin-inline: 0.5rem;
+  margin-inline: calc(var(--spacer) * 0.25);
 }
 
 .mx-2 {
-  margin-inline: 0.75rem;
+  margin-inline: calc(var(--spacer) * 0.5);
 }
 
 .mx-3 {
-  margin-inline: 1rem;
+  margin-inline: calc(var(--spacer) * 1);
 }
 
 .mx-4 {
-  margin-inline: 1.25rem;
+  margin-inline: calc(var(--spacer) * 1.5);
 }
 
 .mx-5 {
-  margin-inline: 1.5rem;
+  margin-inline: calc(var(--spacer) * 2);
 }
 
 .mx-6 {
-  margin-inline: 2rem;
+  margin-inline: calc(var(--spacer) * 3);
 }
 
 .my-1 {
-  margin-block: 0.5rem;
+  margin-block: calc(var(--spacer) * 0.25);
 }
 
 .my-2 {
-  margin-block: 0.75rem;
+  margin-block: calc(var(--spacer) * 0.5);
 }
 
 .my-3 {
-  margin-block: 1rem;
+  margin-block: calc(var(--spacer) * 1);
 }
 
 .my-4 {
-  margin-block: 1.25rem;
+  margin-block: calc(var(--spacer) * 1.5);
 }
 
 .my-5 {
-  margin-block: 1.5rem;
+  margin-block: calc(var(--spacer) * 2);
 }
 
 .my-6 {
-  margin-block: 2rem;
+  margin-block: calc(var(--spacer) * 3);
 }
-
 /* ----\ for margin /---- */
 
 /* ----\ Utilities classes /---- *\
