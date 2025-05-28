@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
 
 * {
   box-sizing: border-box;
@@ -18,6 +19,13 @@
   --warning: #fbc02d;
   --error: #e53835;
   --success: #2e7d31;
+
+  /* Added repeated color variables */
+  --gray-bg: #f5f7fa;
+  --shadow: #adbfd266;
+  --placeholder: #dad4da;
+  --text-gray: #89939E;
+  --icon-bg: #3c474c;
   /* ----\ Color /---- */
 
   /* ----/ Text \---- */
@@ -26,7 +34,7 @@
 
   /* ----/ Other \---- */
   --br-1: 6px;
-  --spacer: 16px;
+  --spacer: 20px;
   /* ----\ Other /---- */
 }
 
@@ -75,7 +83,7 @@ body>header {
   padding-inline: 144px;
   padding-block: 96px;
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 
 .dots {
@@ -84,7 +92,7 @@ body>header {
   /* outline: 2px solid red; */
   max-width: max-content;
   position: absolute;
-  z-index: 0;
+  z-index: 1;
   left: 50%;
   transform: translateX(-50%);
   bottom: 16px;
@@ -123,17 +131,19 @@ body>header {
 /* ----\ Section 2 /---- */
 
 /* ----/ Section 3 \---- */
-#section-3 .right{
+#section-3 .right {
   max-width: 661px;
 }
+
 /* ----\ Section 3 /---- */
 
 /* ----/ Section 4 \---- */
-#section-4{
-  background-color: #f5f7fa;
+#section-4 {
+  background-color: var(--gray-bg);
   padding-block: 64px;
 }
-#section-4 .card{
+
+#section-4 .card {
   display: flex;
   flex-flow: row nowrap;
   gap: 16px;
@@ -144,12 +154,13 @@ body>header {
   align-items: center;
 }
 
-#section-4 .right{
+#section-4 .right {
   flex-grow: 2;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
 }
+
 /* ----\ Section 4 /---- */
 
 /* ----/ Section 5 \---- */
@@ -162,7 +173,163 @@ body>header {
   align-items: center;
   flex-wrap: nowrap;
 }
+
 /* ----\ Section 5 /---- */
+
+/* ----/ Section 6 \---- */
+#section-6 {
+  background-color: var(--gray-bg);
+  padding: 20px;
+}
+
+#section-6 .flex-row {
+  justify-content: space-between;
+  gap: 64px;
+  align-items: center;
+}
+
+#section-6 .flex-row .left>img {
+  mix-blend-mode: multiply;
+}
+
+#section-6 .right {
+  max-width: max-content;
+}
+
+#section-6 .image-group {
+  flex-grow: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ----\ Section 6 /---- */
+
+/* ----/ Section 7 \---- */
+#section-7>section>p {
+  max-width: 628px;
+  text-align: center;
+  margin-inline: auto;
+}
+
+#section-7 .card-group {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+#section-7 .card {
+  max-width: 368px;
+  position: relative;
+  z-index: 0;
+}
+
+#section-7 .card-texts {
+  background-color: var(--gray-bg);
+  border-radius: var(--br-1);
+  box-shadow: 0 8px 16px var(--shadow);
+  padding: 16px;
+  width: 316px;
+  text-align: center;
+  bottom: 80px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 16px;
+  position: relative;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ----\ Section 7 /---- */
+
+/* ----/ Section 8 \---- */
+#section-8 {
+  background-color: var(--gray-bg);
+  padding-block: 32px;
+}
+
+#section-8 .container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+#section-8 .btn-primary {
+  transform: scale(1.2);
+}
+
+/* ----\ Section 8 /---- */
+
+/* ----/ footer \---- */
+footer#footer {
+  background-color: #263238;
+  padding: 64px;
+}
+
+.footer-contents {
+  display: grid;
+  grid-template-columns: 5fr 2fr 2fr 3fr;
+}
+
+/* .col-1{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: ;
+} */
+.social-icons i {
+  background-color: var(--icon-bg);
+  color: var(--white);
+  padding: 8px;
+  clip-path: circle();
+}
+
+#footer p {
+  color: var(--gray-bg);
+  line-height: 32px;
+}
+
+#footer a {
+  color: inherit;
+}
+
+#footer h4 {
+  color: var(--white);
+  margin-bottom: 24px;
+}
+
+#footer ul {
+  list-style: none;
+  padding: 0;
+  color: var(--gray-bg);
+  line-height: 32px;
+}
+
+#footer .subscribe {
+  background-color: #515b60;
+  display: flex;
+  flex-flow: row nowrap;
+  border-radius: var(--br-1);
+}
+
+#footer .subscribe button i {
+  color: #fff7f7;
+  cursor: pointer;
+}
+
+#footer .subscribe input,
+#footer .subscribe button {
+  all: unset;
+  accent-color: transparent;
+  padding: 12px;
+}
+
+#footer .subscribe input::placeholder {
+  color: var(--placeholder);
+}
+
+/* ----\ footer /---- */
 
 .container {
   width: 100%;
@@ -181,10 +348,16 @@ h1 {
   line-height: 76px;
 }
 
+.h1 {
+  font-size: 64px;
+  line-height: 76px;
+}
+
 h2 {
   font-size: 36px;
   line-height: 44px;
 }
+
 .h2 {
   font-size: 36px;
   line-height: 44px;
@@ -196,6 +369,11 @@ h3 {
 }
 
 h4 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.h4 {
   font-size: 20px;
   line-height: 28px;
 }
@@ -243,7 +421,8 @@ h4 {
 
 .flex-row {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
+  /* flex-flow: row wrap; */
 }
 
 .justify-space-between {
@@ -257,13 +436,13 @@ h4 {
 .body-2 {
   font-size: 16px;
   line-height: 24px;
-  color: #89939E;
+  color: var(--text-gray);
 }
 
 .body-3 {
   font-size: 14px;
   line-height: 20px;
-  color: #89939E;
+  color: var(--text-gray);
 }
 
 /* ----/ for margin \---- */
@@ -362,6 +541,7 @@ h4 {
 .my-6 {
   margin-block: calc(var(--spacer) * 3);
 }
+
 /* ----\ for margin /---- */
 
 /* ----\ Utilities classes /---- *\
