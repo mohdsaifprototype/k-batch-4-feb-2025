@@ -12,40 +12,39 @@
 ```
 winget install OpenJS.NodeJS.LTS
 ```
-
 ### Topics we shall cover in JS
-→ Explain scripting
-→ Explain the JavaScript language
-→ Explain the client-side and server-side JavaScript
-→ List the variables and data types in JavaScript
-→ Describe the JavaScript methods to display information
-→ Explain escape sequences and built in functions in JavaScript
-→ Explain events and event handling 
-→ Explain jQuery
-→ Describe how to use the jQuery Mobile
-→ Explain operators and their types in JavaScript
-→ Explain regular expressions in JavaScript
-→ Explain decision-making statements in JavaScript
-→ Explain while loop
-→ Explain for loop
-→ Explain do..while loop
-→ Explain break and continue statement
-→ Explain single-dimensional arrays
-→ Explain multi-dimensional arrays
-→ Explain for..in loop
-→ Explain functions and it's type
-→ Explain parameterized functions
-→ Explain return statement
-→ Explain callback function
-→ Describe objects
-→ Explain different browser objects
-→ Describe DOM and its objects
-→ Callback Hell
-→ Identify the use of Promise.any
-→ Async and await
-→ Explain Private class methods
-→ Explain JSON
-→ Fetch API
+1. Explain scripting
+2. Explain the JavaScript language
+3. Explain the client-side and server-side JavaScript
+4. List the variables and data types in JavaScript
+5. Describe the JavaScript methods to display information
+6. Explain escape sequences and built in functions in JavaScript
+7. Explain events and event handling 
+8. Explain jQuery
+9. Describe how to use the jQuery Mobile
+10. Explain operators and their types in JavaScript
+11. Explain regular expressions in JavaScript
+12. Explain decision-making statements in JavaScript
+13. Explain while loop
+14. Explain for loop
+15. Explain do..while loop
+16. Explain break and continue statement
+17. Explain single-dimensional arrays
+18. Explain multi-dimensional arrays
+19. Explain for..in loop
+20. Explain functions and it's type
+21. Explain parameterized functions
+22. Explain return statement
+23. Explain callback function
+24. Describe objects
+25. Explain different browser objects
+26. Describe DOM and its objects
+27. Callback Hell
+28. Identify the use of Promise.any
+29. Async and await
+30. Explain Private class methods
+31. Explain JSON
+32. Fetch API
 
 ### FAQs
 Q. What is JavaScript?
