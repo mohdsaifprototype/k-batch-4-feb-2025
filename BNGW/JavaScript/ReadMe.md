@@ -6,6 +6,7 @@
 2. [ES Lint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 3. [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 4. [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
+5. [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
 
 ### CMD to install Node.js using powershell
 
