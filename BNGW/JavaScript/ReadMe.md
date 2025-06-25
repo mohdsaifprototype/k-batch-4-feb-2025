@@ -14,15 +14,15 @@
 winget install OpenJS.NodeJS.LTS
 ```
 ### Topics we shall cover in JS
-1. Explain scripting
-2. Explain the JavaScript language
-3. Explain the client-side and server-side JavaScript
-4. List the variables and data types in JavaScript
-5. Describe the JavaScript methods to display information
-6. Explain escape sequences and built in functions in JavaScript
-7. Explain events and event handling 
-8. Explain jQuery
-9. Describe how to use the jQuery Mobile
+01. Explain scripting
+02. Explain the JavaScript language
+03. Explain the client-side and server-side JavaScript
+04. List the variables and data types in JavaScript
+05. Describe the JavaScript methods to display information
+06. Explain escape sequences and built in functions in JavaScript
+07. Explain events and event handling 
+08. Explain jQuery
+09. Describe how to use the jQuery Mobile
 10. Explain operators and their types in JavaScript
 11. Explain regular expressions in JavaScript
 12. Explain decision-making statements in JavaScript
