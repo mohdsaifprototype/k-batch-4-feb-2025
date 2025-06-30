@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>June 30 | JavaScript Events</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- <script src="index.js" defer></script> -->
+</head>
+
+<body>
+  <header>
+    <h1>Introduction to JS Events</h1>
+  </header>
+
+  <button class="btn" onclick="document.body.style.backgroundColor = '#abc'">Click here</button>
+
+  <button class="btn" id="btn">Click me</button>
+
+  <script>
+    // To select a dom and store it in a variable
+    const myBtn = document.querySelector('#btn');
+    // console.log(myBtn);
+
+    let counter = 0;
+    myBtn.onclick = function () {
+      counter++;
+      alert("You clicked the button now you have to give party!");
+      console.log("User clicked the click me button", counter, "times!");
+    }
+  </script>
+</body>
+
+</html>
