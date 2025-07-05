@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>July 04 | Getting started with JQuery</title>
+  <!-- <script src="../jquery-3.7.1.min.js"></script> -->
+
+  <!-- JQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+  <script>
+    $(document).ready(function () {
+      $('#btn').click(function () {
+        $('h2').slideToggle();
+      })
+    });
+  </script>
+  <header>
+    <h1>Getting started with JQuery</h1>
+  </header>
+  <main>
+    <div class="container">
+      <h2>Click the below button</h2>
+      <button id="btn">Click Here</button>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; All rights reserved!</p>
+  </footer>
+
+
+</body>
+
+</html>

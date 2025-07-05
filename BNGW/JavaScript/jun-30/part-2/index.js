@@ -20,4 +20,6 @@ function fanOff() {
 /* Event handling using JavaScript */
 btn1.addEventListener("click", fanOn);
 
+// btn1.removeEventListener(fanon);
+
 btn2.addEventListener("click", fanOff);
