@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>July 14 || JQuery DOM</title>
+  <link rel="stylesheet" href="index.css">
+  <!-- JQuery CDN -->
+  <script src="../jquery-3.7.1.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.7.1.js"></script> -->
+  <script defer src="index.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1 class="text-center">JQuery | Quiz Maker</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- Quiz Maker -->
+      <div class="quiz-maker">
+        <h5>Fill the form to add questions</h5>
+        <form action="#" class="qm-form">
+          <input type="text" name="question" id="q" placeholder="What is my question?">
+          <label>a) <input type="text" name="question" id="op1" placeholder="Option 1"></label>
+
+          <label>b) <input type="text" name="question" id="op2" placeholder="Option 2"></label>
+          <label>c) <input type="text" name="question" id="opt3" placeholder="Option 3"></label>
+          <label>d) <input type="text" name="question" id="opt4" placeholder="Option 4"></label>
+
+          <select name="correctOpt" id="correctOpt" title="Choose correct option from the dropdown">
+            <option>Select Correct Option</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+          </select>
+
+          <button class="btn btn-primary" type="button">Append Question</button>
+        </form>
+      </div>
+      <!-- Quiz structure -->
+      <div class="quiz">
+        <form action="#">
+          <h5 class="text-center">Quiz</h5>
+          <div id="q1" class="question">
+            <!-- Question -->
+            <h6>Which of the following is not part of JQuery?</h6>
+            <!-- options -->
+            <label><input type="radio" name="q1" value="AJAX"> AJAX</label>
+            <label><input type="radio" name="q1" value="Event Handling"> Event Handling</label>
+            <label><input type="radio" name="q1" value="Filter"> Filter</label>
+            <label><input type="radio" name="q1" value="Loops"> Loops</label>
+            <!-- Buttons -->
+            <button data-check class="btn btn-secondary" type="button">Check Answer</button>
+          </div>
+          <div id="q2" class="question">
+            <!-- Question -->
+            <h6>Which of the following is not an event in JQuery?</h6>
+            <!-- options -->
+            <label><input type="radio" name="q2" value="click"> click</label>
+            <label><input type="radio" name="q2" value="keyup"> keyup</label>
+            <label><input type="radio" name="q2" value="dblclick"> dblclick</label>
+            <label><input type="radio" name="q2" value="dbup"> dbup</label>
+            <!-- Buttons -->
+            <button data-check class="btn btn-secondary" type="button">Check Answer</button>
+          </div>
+
+          <div id="q3" class="question">
+            <!-- Question -->
+            <h6>This is going to be our question?</h6>
+            <!-- options -->
+            <label class="incorrect"><input type="radio" name="q2"> incorrect</label>
+            <label class="incorrect"><input type="radio" name="q2"> incorrect</label>
+            <label class="correct"><input type="radio" name="q2"> correct</label>
+            <label class="incorrect"><input type="radio" name="q2"> incorrect</label>
+            <!-- Buttons -->
+            <button data-check class="btn btn-secondary" type="button">Check Answer</button>
+          </div>
+          <br />
+          <button class="btn btn-primary" type="reset">Restart</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p class="text-center">&copy; All rights reserved</p>
+  </footer>
+</body>
+
+</html>

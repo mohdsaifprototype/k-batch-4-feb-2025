@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: #fff;
+  background-color: #262335;
+  counter-reset: question;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+/* ---/ Quiz Maker \--- */
+.quiz-maker {
+  max-width: 720px;
+  background-color: #fff;
+  color: #262335;
+  padding: 2rem;
+  font-size: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 4px hsl(0, 0%, 75%);
+  margin-block: 2rem;
+  margin-inline: auto;
+}
+
+.qm-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.qm-form label {
+  display: flex;
+}
+/* ---\ Quiz Maker /--- */
+
+/* ---/ Quiz \--- */
+.quiz {
+  max-width: 720px;
+  background-color: #fff;
+  color: #262335;
+  padding: 2rem;
+  font-size: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 4px hsl(0, 0%, 75%);
+  margin-block: 2rem;
+  margin-inline: auto;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.question button {
+  align-self: flex-start;
+}
+.quiz h5 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-block-end: 1rem;
+}
+
+.question h6 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.question h6::before {
+  content: "Q" counter(question) ": ";
+  counter-increment: question;
+}
+
+.question label {
+  padding-inline-start: 12px;
+  display: block;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.incorrect {
+  color: white;
+  background-color: #ff5500bb;
+  border: 2px solid rgb(255, 0, 0);
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.correct {
+  color: white;
+  background-color: rgba(0, 128, 0, 0.7);
+  border: 2px solid green;
+  border-radius: 4px;
+  padding: 8px;
+}
+/* ---\ Quiz /--- */
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  all: unset;
+  padding: 0.25rem 0.5rem;
+  font-size: inherit;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px gray;
+  transition: all 0.2s ease-in-out;
+  display: block;
+  border: 2px solid;
+}
+
+.btn:hover {
+  box-shadow: 0 2px 2px rgba(128, 128, 128, 0.76);
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  box-shadow: 0 0 0 rgb(57, 57, 57);
+  transform: translateY(0px);
+}
+
+.btn-primary {
+  color: #262335;
+  background-color: #fff;
+  border-color: #262335;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #262335;
+  border-color: #261386;
+}
+
+button[data-check]
