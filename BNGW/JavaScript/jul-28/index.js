@@ -46,15 +46,14 @@ Topic: if, else if, else ladder.
   4. If the value is -ve print it's absolute value
 */
 let num = 0;
-if(num == 0){
-  console.log("The number is zero: ZERO ");
-}else if(num<0){
-  console.log("This number is negative and u trick me", num*-1);
-}else if(num%2 == 0){
-  console.log("The number is  even", num/2 );
-}
-else{
-  console.log("The number is odd:", num*2);
+if (num == 0) {
+	console.log("The number is zero: ZERO ");
+} else if (num < 0) {
+	console.log("This number is negative and u trick me", num * -1);
+} else if (num % 2 == 0) {
+	console.log("The number is  even", num / 2);
+} else {
+	console.log("The number is odd:", num * 2);
 }
 
 /* 
