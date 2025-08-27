@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the number!</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+</head>
+
+<body>
+  <h1>Guess the number between 1 to 100</h1>
+  <form action="#">
+    <input type="number" name="number" id="guessNum" placeholder="enter the number" pattern="[0-9]{3}" min="0"
+      max="200">
+    <button type="button" onclick="preverntDefault()">Check your number</button>
+  </form>
+  <div></div>
+  <script>
+    $(document).ready(function () {
+      let randomNum = parseInt(Math.random() * 200);
+      let flag = 0;
+      $("button").click(function () {
+        flag++;
+        let usrNum = $("#guessNum").val();
+        if (usrNum == randomNum) {
+          $("div").html("You guessed the number in " + flag + "times!");
+        } else {
+          if (usrNum > randomNum) {
+            $("div").html("Try smaller number...");
+          } else {
+            $("div").html("Try greater number...");
+          }
+        }
+      })
+    })
+  </script>
+</body>
+
+</html>

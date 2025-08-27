@@ -30,22 +30,23 @@ winget install OpenJS.NodeJS.LTS
 14. Explain for loop
 15. Explain do..while loop
 16. Explain break and continue statement
-17. Explain single-dimensional arrays
-18. Explain multi-dimensional arrays
-19. Explain for..in loop
-20. Explain functions and it's type
-21. Explain parameterized functions
-22. Explain return statement
-23. Explain callback function
-24. Describe objects
-25. Explain different browser objects
-26. Describe DOM and its objects
-27. Callback Hell
-28. Identify the use of Promise.any
-29. Async and await
-30. Explain Private class methods
-31. Explain JSON
-32. Fetch API
+17. Explain string and it's methods
+18. Explain single-dimensional arrays
+19. Explain multi-dimensional arrays
+20. Explain for..in loop
+21. Explain functions and it's type
+22. Explain parameterized functions
+23. Explain return statement
+24. Explain callback function
+25. Describe objects
+26. Explain different browser objects
+27. Describe DOM and its objects
+28. Callback Hell
+29. Identify the use of Promise.any
+30. Async and await
+31. Explain Private class methods
+32. Explain JSON
+33. Fetch API
 
 ### FAQs
 Q. What is JavaScript?
