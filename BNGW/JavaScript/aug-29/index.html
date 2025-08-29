@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theme toggler</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+</head>
+
+<body>
+
+  <i class="fa-solid fa-circle-half-stroke"></i>
+  <h1>This is a heading</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi numquam sapiente voluptatibus error blanditiis,
+    pariatur eveniet cum, aliquam nulla deserunt alias distinctio dicta perferendis, magnam harum obcaecati nisi sint
+    voluptas!</p>
+
+  <script>
+    $(document).ready(function () {
+      $("i").click(function () {
+        $("html").attr("data-theme", "dark");
+      })
+    })
+  </script>
+</body>
+
+</html>

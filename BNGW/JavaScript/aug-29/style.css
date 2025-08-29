@@ -1,0 +1,33 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css");
+
+:root {
+  --primary: blue;
+  --bg: yellow;
+}
+
+:root[data-theme="dark"] {
+  --primary: salmon;
+  --bg: rgb(25, 25, 25);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--primary);
+  background-color: var(--bg);
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+

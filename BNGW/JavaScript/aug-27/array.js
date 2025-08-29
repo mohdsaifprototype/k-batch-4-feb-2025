@@ -1,5 +1,10 @@
 /* 
 Array is a non-primitive data structure.
+Array is a collecion of more than one values stored in a single variable.
+Array size      --> arr.length;
+Array element   --> ["element1", "element2", "..."]
+Array indexing  --> arr[0]
+last indexing of an array is (arr.length - 1) or we can use -ve indexing as well with the help of arr.at(-1) method.
 */
 
 let student = ["Ankush", "Aman Kanojia", "Punit Kumar", "Ravi", "Rohan Mehra"];
