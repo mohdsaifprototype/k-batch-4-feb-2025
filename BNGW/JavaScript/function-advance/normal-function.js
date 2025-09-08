@@ -30,3 +30,18 @@
 
 // let square = num => num * num;
 // console.log(square(9));
+
+
+// Immediately Invoked Function Expression (IIFE)
+/* 
+(function () {
+  statements...
+})();
+*/
+
+(function () {
+  let a = 4;
+  let b = 6;
+  let c = sum(a, b);
+  console.log(`The sum of a and b is: ${c}`);
+})();

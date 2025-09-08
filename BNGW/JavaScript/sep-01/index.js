@@ -7,10 +7,10 @@ i.e.,
 'This is a string'
 "This is a string"
 
-There is a a special type of string aka string template or template litral.
-We use baktic for that.
+There is a a special type of string aka string template or template literal.
+We use backtick for that.
 e.g.,
-let usr = "Ankush";
+let usr = "Alex Brown";
 let message = `Hi there ${usr}, learning JavaScript is fun.`;
 console.log(message);
 */
@@ -26,5 +26,5 @@ console.log(message);
 let str = 'Widget with id';
 
 console.log( str.indexOf('Widget') ); // 0, because 'Widget' is found at the beginning
-console.log( str.indexOf('wwidget') ); // -1, not found, the search is case-sensitive
+console.log( str.indexOf('Widgets') ); // -1, not found, the search is case-sensitive
 console.log( str.indexOf("with") ); // 1, "id" is found at the position 1 (..idget with id)
