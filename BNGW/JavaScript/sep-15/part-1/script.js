@@ -9,7 +9,7 @@ hour.innerText = "HH";
 minute.innerText = "MM";
 second.innerText = "SS";
 amPm.innerText = "AM";
-
+getTime();
 /* Calling getTime function every 1000 mille seconds */
 setInterval(getTime, 1000);
 

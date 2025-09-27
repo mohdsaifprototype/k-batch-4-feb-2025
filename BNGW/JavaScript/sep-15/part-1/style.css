@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -7,8 +9,6 @@ html {
 }
 
 body {
-  min-height: 100vh;
-  margin: 0;
   color: #121212;
   background-color: #fff;
 }
@@ -39,3 +39,8 @@ body {
   font-weight: bold;
   font-family: "Jetbrains Mono", monospace;
 }
+
+main {
+  min-height: calc(100vh - 42.4px - 21.6px);
+}
+
