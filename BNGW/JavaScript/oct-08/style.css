@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  color: #eee;
+  background-color: #262335;
+  padding-inline: 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.text-center{
+  text-align: center;
+}
+
+footer {
+  padding: 1rem;
+}
+
+.movie-container {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  gap: 1rem;
+  margin-block: 1rem;
+}
+
+.card {
+  width: 300px;
+  background-color: #fff;
+  color: #262335;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.card p {
+  height: 2rem;
+  flex-grow: 1;
+  overflow-y: scroll;
+  align-self: flex-end;
+}
