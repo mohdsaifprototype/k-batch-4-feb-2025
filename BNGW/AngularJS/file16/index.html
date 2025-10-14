@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angular Animations</title>
+    <!-- AngularJS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
+    <!-- AngularJS Animation CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-animate/1.8.3/angular-animate.min.js"></script>
+    <style>
+      div {
+        transition: all linear 1s;
+        background-color: cyan;
+        height: 100px;
+      }
+
+      .ng-hide {
+        height: 0;
+      }
+    </style>
+  </head>
+  <body ng-app="ngAnimate">
+    <h1>Animate the Div:</h1>
+    <input type="checkbox" ng-model="myCheck" />
+    <div ng-hide="myCheck"></div>
+    <!-- <script>
+      var app = angular.module("ngAnimate", ["ngAnimate"]);
+    </script> -->
+  </body>
+</html>

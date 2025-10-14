@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code for the Angular App Lifecycle</title>
+    <!-- <link rel="stylesheet" href="default.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  </head>
+  <body>
+    <div ng-app="costApp" ng-controller="CostController">
+      <b>Bill:</b>
+      <label>
+        Quantity: <input type="number" min="0" ng-model="qty" required />
+      </label><br />
+      <label>Cost: <input type="number" min="0" ng-model="cost" required /></label>
+      <div>
+        <b>Total:</b>
+        <span>{{total | currency: 'Rs '}}</span>
+        <button class="btn" ng-click="pay()">Pay</button>
+      </div>
+    </div>
+    <script>
+      var app = angular.module("costApp", []);
+      app.controller("CostController", function ($scope) {
+        $scope.qty = 0;
+        $scope.cost = 0;
+        $scope.total = 0;
+        $scope.pay = function () {
+          this.total = this.qty * this.cost;
+        };
+      });
+    </script>
+  </body>
+</html>

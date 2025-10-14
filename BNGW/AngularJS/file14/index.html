@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Validation CSS class</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <style>
+      input.ng-pristine {
+        background-color: yellow;
+      }
+      input.ng-touched.ng-invalid {
+        background-color: red;
+      }
+      input.ng-touched.ng-valid {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body ng-app>
+    <form name="studentForm" novalidate class="student-form">
+      <label for="firstName">First Name: </label> <br />
+      <input
+        id="firstName"
+        type="text"
+        name="firstName"
+        ng-model="firstName"
+        ng-required="true"
+      />
+      <br />
+      <br />
+
+      <label for="lastName">Last Name: </label> <br />
+      <input
+        id="lastName"
+        type="text"
+        name="lastName"
+        ng-model="lastName"
+        ng-required="true"
+      />
+      <br />
+      <br />
+
+      <label for="email">Email: </label> <br />
+      <input
+        id="email"
+        type="email"
+        name="email"
+        ng-model="email"
+        ng-required="true"
+      />
+      <br />
+      <br />
+
+      <input type="submit" value="Submit" /> <br />
+
+      <p>
+        Initially the input fields are yellow. They become green when we give
+        valid data in it. They turn red if data is invalid, say an empty string.
+      </p>
+    </form>
+  </body>
+</html>

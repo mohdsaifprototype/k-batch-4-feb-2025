@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo for ng-show and ng-hide</title>
+    <!-- <link rel="stylesheet" href="default.css" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  </head>
+  <body ng-app="">
+    <p>Do you want to hide the list of cities?</p>
+    <input type="checkbox" ng-model="myVar" />
+    <!-- <input type="text" ng-model="myVar" /> -->
+    <ul ng-show="myVar">
+      <li>Pizza</li>
+      <li>Noodles</li>
+      <li>Bread</li>
+    </ul>
+  </body>
+</html>

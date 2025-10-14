@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo for custom filter</title>
+    <!-- <link rel="stylesheet" href="default.css" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  </head>
+  <body>
+    <ul ng-app="myApp" ng-controller="namesCtrl">
+      <li ng-repeat="x in names">{{x | myName}}</li>
+    </ul>
+
+    <script>
+      var app = angular.module("myApp", []);
+      app.filter("myName", function () {
+        return function (x) {
+          var i,
+            c,
+            txt = "";
+          for (i = 0; i < x.length; i++) {
+            c = x[i];
+
+            if (i % 2 == 0) {
+              c = c.toUpperCase();
+            }
+            txt += c;
+          }
+          return txt;
+        };
+      });
+
+      app.controller("namesCtrl", function ($scope) {
+        $scope.names = [
+          "Priya Kumari",
+          "Prem kumar",
+          "Salim khan",
+          "Mike russel",
+          "Lakshmi menon",
+        ];
+      });
+    </script>
+    <p>Make your own filters.</p>
+    <p>
+      This filter, called "myName", will capitalize every second character of a
+      given name!
+    </p>
+  </body>
+</html>

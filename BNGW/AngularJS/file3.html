@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo for a ng-model App</title>
+    <!-- <link rel="stylesheet" href="default.css" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <style>
+      input.ng-invalid {
+        background-color: lightblue;
+      }
+
+      input.ng-valid {
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body ng-app="myApp" ng-controller="myController">
+    <form name="myForm">
+      Enter your city:
+      <input name="myName" ng-model="myCity" required />
+    </form>
+    <p>Hi! I know that <em>{{myCity}}</em> is a nice place.</p>
+
+    <script>
+      var app = angular.module("myApp", []);
+      app.controller("myController", function ($scope) {
+        $scope.name = "";
+      });
+    </script>
+  </body>
+</html>

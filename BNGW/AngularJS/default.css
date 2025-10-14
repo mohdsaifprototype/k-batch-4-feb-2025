@@ -1,0 +1,255 @@
+/* 
+    Ultimate CSS Mini-Framework - A Futuristic Theme for World-Class UI/UX
+    Author: [Your Name]
+    Description: Designed to offer an unparalleled web experience with advanced CSS3 techniques, dark mode, and smooth animations.
+*/
+
+/* Root Variables: Easy Customization */
+:root {
+  /* Light Theme Colors */
+  --primary-color-light: #0084ff;
+  --secondary-color-light: #f39c12;
+  --background-color-light: #f0f0f5;
+  --text-color-light: #2c3e50;
+
+  /* Dark Theme Colors */
+  --primary-color-dark: #0f62fe;
+  --secondary-color-dark: #8e44ad;
+  --background-color-dark: #121212;
+  --text-color-dark: #ecf0f1;
+
+  /* Common */
+  --font-family: "Inter", sans-serif;
+  --border-radius: 4px;
+  --transition-speed: 0.4s;
+  --animation-speed: 0.6s;
+  --blur-bg: rgba(255, 255, 255, 0.1);
+
+  /* Scrollbar */
+  --scrollbar-bg: rgba(0, 0, 0, 0.5);
+  --scrollbar-thumb: rgba(255, 255, 255, 0.7);
+}
+
+/* Light and Dark Mode */
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  transition: background-color var(--transition-speed),
+    color var(--transition-speed);
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+/* Dark Mode: Triggered by the 'dark-mode' class on the body */
+body.dark-mode {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+/* Base Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: inherit;
+}
+
+p,
+a {
+  line-height: 1.8;
+}
+
+a {
+  color: var(--primary-color-light);
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+a:hover {
+  color: var(--secondary-color-light);
+}
+
+/* Buttons */
+button,
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: var(--border-radius);
+  background: var(--primary-color-light);
+  color: #fff;
+  cursor: pointer;
+  transition: background var(--transition-speed),
+    transform var(--transition-speed);
+}
+
+button:hover,
+.btn:hover {
+  background: var(--secondary-color-light);
+  transform: translateY(-2px);
+}
+
+button:disabled,
+.btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Forms & Inputs */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+  transition: border-color var(--transition-speed),
+    background-color var(--transition-speed);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--primary-color-light);
+  background-color: var(--blur-bg);
+  outline: none;
+}
+
+/* Dark Mode Adjustments for Interactive Elements */
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+body.dark-mode button,
+body.dark-mode .btn {
+  background: var(--primary-color-dark);
+}
+
+body.dark-mode a {
+  color: var(--primary-color-dark);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: rgba(0, 0, 0, 0.05);
+  font-weight: bold;
+}
+
+/* Advanced Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp var(--animation-speed) forwards;
+}
+
+/* Scroll Effects */
+.scroll-parallax {
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--animation-speed), transform var(--animation-speed);
+}
+
+.scroll-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Utility Classes */
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 5px;
+}
+
+/* Smooth Animations */
+body.dark-mode .transition {
+  transition: background-color var(--transition-speed),
+    color var(--transition-speed);
+}
+
+/* Accessibility Focus */
+:focus-visible {
+  outline: 2px solid var(--primary-color-light);
+  outline-offset: 4px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
