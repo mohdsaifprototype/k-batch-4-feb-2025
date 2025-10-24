@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>October 15 | AngularJS</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <!-- <script defer src="script.js"></script> -->
+</head>
+
+<body ng-controller="myController">
+  <header>
+    <h1>AngularJS Applications</h1>
+  </header>
+
+  <main ng-init="options = ['delhi', 'bihar', 'UP', 'MP']">
+    <form action="#">
+      <h3>Find the odd one out</h3>
+      <label ng-repeat="elem in options"><input type="radio" name="city" value="{{elem}}" /> {{elem}}</label>
+      
+
+      <div ng-bind="options[0]"></div>
+
+      <input type="text" name="usrName" placeholder="Enter your name" ng-model="name">
+
+      <div ng-bind="name"></div>
+    </form>
+
+    <h2>Salary</h2>
+   
+  </main>
+
+  <footer>
+    <p>&copy; All rights reserved</p>
+  </footer>
+  <script>
+    let app = angular.module("myApp", []);  // AngularJS module
+    app.controller("myController", function ($scope) {
+      $scope.name = "";
+    })
+  </script>
+</body>
+
+</html>
