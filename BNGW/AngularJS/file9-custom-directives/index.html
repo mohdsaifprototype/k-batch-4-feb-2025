@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Demo for custom directive in AngularJS</title>
-    <!-- <link rel="stylesheet" href="default.css" /> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <style>
-      input.ng-invalid {
-        background-color: lightblue;
-      }
 
-      input.ng-valid {
-        background-color: lightgreen;
-      }
-    </style>
-  </head>
-  <body ng-app="myApp">
-    <my-custom-directive></my-custom-directive>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo for custom directive in AngularJS</title>
+  <!-- <link rel="stylesheet" href="default.css" /> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <style>
+    input.ng-invalid {
+      background-color: lightblue;
+    }
 
-    <div my-custom-directive=""></div>
-   
+    input.ng-valid {
+      background-color: lightgreen;
+    }
+  </style>
+</head>
 
-    <script>
-      var app = angular.module("myApp", []);
-      app.directive("myCustomDirective", function () {
-        return {
-          restrict: "E",
-          template: `<h3>Hello AngularJS!!</h3>
+<body ng-app="myApp">
+  <my-custom-directive></my-custom-directive>
+
+  <div my-custom-directive=""></div>
+  <div class="my-custom-directive"></div>
+
+
+  <script>
+    var app = angular.module("myApp", []);
+    app.directive("myCustomDirective", function () {
+      return {
+        restrict: "ECMA",
+        template: `<h3>Hello AngularJS!!</h3>
           <p>I was made inside a custom directive</p>`,
-        };
-      });
-    </script>
-  </body>
+      };
+    });
+  </script>
+</body>
+
 </html>

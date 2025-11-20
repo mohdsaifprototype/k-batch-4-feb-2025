@@ -9,7 +9,7 @@
   <body ng-app="">
     <p>Try writing in the input field:</p>
     <form name="myForm">
-      <input type="password" name="myInput" ng-model="myInput" required minlength="8"/>
+      <input type="password" name="myInput" ng-model="myInput" required minlength="8" maxlength="12"/>
     </form>
     <p>The input's valid state is:</p>
     <h1>{{myForm.myInput.$valid}}</h1>
